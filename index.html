@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To My PinakaMahal Na Babae sa Buong Buhay ko🍀</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #e6f4ea;
+      color: #2e7d32;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: rgb(12, 204, 5);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      display: none;
+    }
+    .heart {
+      position: fixed;
+      color: rgb(33, 203, 14);
+      animation: float 6s infinite;
+      opacity: 0;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-1000px);
+        opacity: 0;
+      }
+    }
+    .intro-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #a5d6a7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      text-align: center;
+      color: rgb(8, 227, 63);
+    }
+    .intro-screen h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .intro-button {
+      background-color: rgb(48, 211, 15);
+      color: #2e7d32;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .intro-button:hover {
+      background-color: #12d118;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .letter {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .surprise {
+      display: none;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .photos img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 10px;
+    }
+    .button {
+      display: inline-block;
+      background-color: #66bb6a;
+      color: rgb(24, 227, 30);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background- 0.3s;
+    }
+    .button:hover {
+      background-color: #43a047;
+    }
+    .clover-bg {
+      background-image:src="image/clover.png"
+      background-repeat: repeat;
+      background-size: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro-screen" id="intro">
+    <h1>Hi Bal 💚</h1>
+    <p>A very special girl deserved a very special treat</p>
+    <button class="intro-button" onclick="startLoveLetter()">Open Your Letter 🍀</button>
+  </div>
+
+  <div class="container" id="mainContent">
+    <h1>To My Palagi 🍀</h1>
+    <p class="letter">
+      Dear Bal,<br /><br />
+      <!-- Write your love letter here -->
+      Happy 17th Monthsary to my baby girl ang bilis ng panahon 1 year and 5 months na tayo. Simula nung nakilala kita sobrang thankful ko talaga kay papa god, dahil ang daming lesson at pagsubok ang napagdaanan natin through ups and down dinadamayan mo ko diyan pa lang sobrang swerte ko na sayo. Araw araw ko pinagdadasal ang future natin dalawa bal sabay natin tutuparin yan. Sorry sa mga kasalanan nagagawa ko sayo  wag ka mag sasawa sa ugali ko please lang po alam mo naman special ang baby boy mo charot HAHAHAHA. Mahal na mahal kita bal ikaw lang ang mamahalin ko habang buhay wala ng iba. Ikaw lang iniisip ko sa araw araw kahit sa pag tulog at pag gising ikaw agad ang hinahanap sobrang baliw na sayo baby girl miss na kita habang ginagawa ko ito 🥺 I Love You So Much. More Roadtrips sa atin dalawa Bal iikutin natin ang buong pilipinas kasama si maximus. Nakakatuwa parang kailan lang hindi pa tayo nakakalayo mag motor pero ngayon kung saan man natin gusto mag punta. Lagi mo tatandaan bal Never Mag sasawa sa ugali mo. Never Mag Loloko sayo ikaw lang ang mamahalin ko habang buhay Mahal na mahal kita I Love you So Much 
+    </p>
+    <div style="text-align: center;">
+      <button class="button" onclick="showSurprise()">Tap for a Surprise 🍀</button>
+    </div>
+    <div class="surprise" id="surprise">
+      <h2>Ang Ganda Mo 🍀 🎁</h2>
+      <p>More Roadtrips Gala Destination With You My Palagi. 🍀</p>
+      <div class="photos">
+        <img src="image/baby girl ko.jpg" alt="Memory 1" />
+        <img src="image/cy.jpg"  alt="Memory 2" />
+        <img src="image/bal ko.jpg" alt="Memory 2" />
+        <img src="image/alily.jpg" alt="Memory 2" />
+        
+      </div>
+      <audio controls autoplay>
+        <source src="audio/PALAGI - TJxKZ  LIVE SESSIONS.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function startLoveLetter() {
+      document.getElementById("intro").style.display = "none";
+      document.body.classList.add("clover-bg");
+      document.getElementById("mainContent").style.display = "block";
+    }
+
+    function showSurprise() {
+      document.getElementById("surprise").style.display = "block";
+      for (let i = 0; i < 30; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "🍀";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.top = Math.random() * 100 + "vh";
+        heart.style.fontSize = Math.random() * 30 + 20 + "px";
+        heart.style.animationDuration = Math.random() * 5 + 3 + "s";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 8000);
+      }
+    }
+  </script>
+</body>
+</html>
